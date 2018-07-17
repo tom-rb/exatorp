@@ -1,0 +1,83 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600)
+@import url(http://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css)
+@import "~font-awesome/scss/font-awesome.scss"
+
+// Bulma frameworks and custom variables
+@import "~bulma/sass/utilities/initial-variables"
+@import "~bulma/sass/utilities/functions"
+// Changing some colors
+$blue: #0A3E7D
+$green: #09C109
+$red: #BF0000
+$orange: #F1980B
+$primary: #009900
+$link: $primary
+$warning: $orange
+// And other layout variables
+$section-padding: 2rem 1.5rem
+$section-padding-medium: 6rem 1.5rem
+$section-padding-large: 12rem 1.5rem
+@import "~bulma/sass/utilities/derived-variables.sass"
+@import "~bulma/bulma"
+
+// Other css libs
+@import "buefy"
+@import "~animate.css/animate.min.css"
+
+// App css
+@import "bulma_ext.sass"
+@import "layout"
+@import "profile"
+@import "guest"
+
+// Vue v-cloak to hide unmounted components
+[v-cloak]
+  display: none
+
+// Helpers
+.has-text-bold
+  font-weight: bold
+
+tr.is-vcentered td
+  vertical-align: middle
+
+.is-spaced-05
+  margin-top: 0.5em
+
+.is-spaced-1
+  margin-top: 1em
+
+.is-spaced-2
+  margin-top: 2em
+
+.is-spaced-bottom-1
+  margin-bottom: 1em
+
+.is-spaced-bottom-2
+  margin-bottom: 2em
+
+.is-spaced-right-05
+  margin-right: 0.5em
+
+.is-spaced-right-1
+  margin-right: 1em
+
+.is-framed
+  padding: 1.5em 1.2em
+
+// Adding colors to right-icons in form controls
+.control.has-icons-right .icon.is-primary
+  color: $primary
+
+.control.has-icons-right .icon.is-success
+  color: $success
+
+.control.has-icons-right .icon.is-info
+  color: $info
+
+.control.has-icons-right .icon.is-warning
+  color: $warning
+
+.control.has-icons-right .icon.is-danger
+  color: $danger

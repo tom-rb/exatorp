@@ -1,0 +1,84 @@
+// Full height
+#exato-app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+// Navbar
+.curso-exato {
+  margin-left: 0.5em;
+}
+nav .name {
+  margin-left: 0.5em;
+}
+
+// Between navbar and footer
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+// Shrink default sizes because we have a sidebar
+.app-content.container {
+  @include desktop() {
+    max-width: 960px - 200px;
+    width: 960px - 200px;
+  }
+  @include widescreen() {
+    max-width: 1152px - 200px;
+    width: 1152px - 200px;
+  }
+  @include fullhd() {
+    max-width: 1344px - 230px;
+    width: 1344px - 230px;
+  }
+}
+
+// Sidebar
+.sidebar {
+  min-height: 100%;
+  width: 200px;
+  background-color: #232B2D;
+  color: #6F7B7E;
+  padding: 1em;
+}
+
+.sidebar .title {
+  color: #6F7B7E;
+}
+
+.sidebar .item {
+  display: block;
+  padding: 10px 0;
+  color: #8e9c9f;
+}
+
+.sidebar .item.is-active {
+  color: #F6F7F7;
+}
+
+.sidebar .name {
+  margin-left: 1em;
+}
+
+// Footer
+.exato-footer {
+  background-color: whitesmoke;
+  padding: 1em 0.3em;
+}
+
+// Flash message
+.message-flash {
+  position: fixed;
+  right: 10px;
+  top: 60px;
+  z-index: 99;
+
+  @include mobile() {
+    right: 5px;
+    top: auto;
+    bottom: 15px;
+  }
+}

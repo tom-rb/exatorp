@@ -1,0 +1,20 @@
+/node_modules
+/public/storage
+/storage/*.key
+/storage/database
+/vendor
+/.vagrant
+Homestead.json
+Homestead.yaml
+.env
+
+# IdeHelper by Barry vd. Heuvel
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+
+# Front-end compiled files
+/public/mix-manifest.json
+/public/css
+/public/fonts
+/public/js

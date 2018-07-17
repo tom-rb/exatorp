@@ -1,0 +1,27 @@
+// Profile
+.profile {
+  margin-bottom: 30px;
+}
+
+.profile-name {
+  .title {
+    margin-bottom: 0.2em;
+  }
+  .since {
+    margin-left: 0.3em;
+    font-size: 80%;
+    font-weight: lighter;
+  }
+}
+
+// Availability boxes (used in application form too)
+.notification.availability-header {
+  text-align: center;
+  padding: .5em 0;
+  margin: 0;
+}
+
+.notification.availability-cell {
+  text-align: center;
+  padding: 1em 0 .8em;
+}

@@ -1,0 +1,94 @@
+// Adding a vertical section class
+.vsection
+  padding: nth($section-padding, 1) 0
+  // Responsiveness
+  +desktop
+    // Sizes
+    &.is-medium
+      padding: nth($section-padding-medium, 1) 0
+    &.is-large
+      padding: nth($section-padding-large, 1) 0
+
+
+// Make columns reversable on mobile
+.columns.is-reversed-mobile
+  +mobile
+    display: flex
+    flex-direction: column-reverse
+
+// Extending column sizes breakpoints
+.column
+  +touch
+    &.is-narrow-touch
+      flex: none
+    &.is-full-touch
+      flex: none
+      width: 100%
+    &.is-three-quarters-touch
+      flex: none
+      width: 75%
+    &.is-two-thirds-touch
+      flex: none
+      width: 66.6666%
+    &.is-half-touch
+      flex: none
+      width: 50%
+    &.is-one-third-touch
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter-touch
+      flex: none
+      width: 25%
+    &.is-offset-three-quarters-touch
+      margin-left: 75%
+    &.is-offset-two-thirds-touch
+      margin-left: 66.6666%
+    &.is-offset-half-touch
+      margin-left: 50%
+    &.is-offset-one-third-touch
+      margin-left: 33.3333%
+    &.is-offset-one-quarter-touch
+      margin-left: 25%
+    @for $i from 1 through 12
+      &.is-#{$i}-touch
+        flex: none
+        width: ($i / 12) * 100%
+      &.is-offset-#{$i}-touch
+        margin-left: ($i / 12) * 100%
+  +tablet-only
+    &.is-narrow-tablet-only
+      flex: none
+    &.is-full-tablet-only
+      flex: none
+      width: 100%
+    &.is-three-quarters-tablet-only
+      flex: none
+      width: 75%
+    &.is-two-thirds-tablet-only
+      flex: none
+      width: 66.6666%
+    &.is-half-tablet-only
+      flex: none
+      width: 50%
+    &.is-one-third-tablet-only
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter-tablet-only
+      flex: none
+      width: 25%
+    &.is-offset-three-quarters-tablet-only
+      margin-left: 75%
+    &.is-offset-two-thirds-tablet-only
+      margin-left: 66.6666%
+    &.is-offset-half-tablet-only
+      margin-left: 50%
+    &.is-offset-one-third-tablet-only
+      margin-left: 33.3333%
+    &.is-offset-one-quarter-tablet-only
+      margin-left: 25%
+    @for $i from 1 through 12
+      &.is-#{$i}-tablet-only
+        flex: none
+        width: ($i / 12) * 100%
+      &.is-offset-#{$i}-tablet-only
+        margin-left: ($i / 12) * 100%

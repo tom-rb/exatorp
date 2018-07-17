@@ -1,0 +1,16 @@
+.collapse-enter-active, .collapse-leave-active {
+  overflow: hidden;
+}
+.collapse-enter-active {
+  transition: all 0.5s;
+}
+.collapse-leave-active {
+  transition: all 0.2s;
+}
+.collapse-enter, .collapse-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+.collapse-enter-to, .collapse-leave {
+  max-height: 250px; // working with current use cases
+}
